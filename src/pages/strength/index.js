@@ -1,12 +1,17 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import Layout from '../../components/Layout/Layout';
+import Layout from '../../components/Layout';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import { StaticImage } from 'gatsby-plugin-image';
+import * as s from './index.module.scss';
 
 const Strength = () => {
   return (
     <Layout>
-      <div>strength</div>
-      <Link to="/">Home</Link>
+      <div className={s.strengthPage}>
+        <AniLink swipe direction="down" to="/" className={s.backIcon}>
+          <StaticImage src="../../images/down_arrow.png" alt="logo.png" />
+        </AniLink>
+      </div>
     </Layout>
   );
 };

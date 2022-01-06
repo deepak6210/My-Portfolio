@@ -1,0 +1,20 @@
+.footer {
+  display: flex;
+  background-color: #0a0a0a;
+  justify-content: center;
+  padding: 30px 0;
+  .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icons {
+    display: flex;
+    list-style: none;
+    li {
+      padding: 8px;
+      background-color: #1c1c1c;
+      margin-left: 15px;
+    }
+  }
+}

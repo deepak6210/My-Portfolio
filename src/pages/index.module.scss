@@ -1,23 +1,37 @@
+// @import 'src/styles/colors.module';
+
 body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: hidden; /* Hide horizontal scrollbar */
+  background-color: black;
+  color: #b7b7b7;
+}
+
+a {
+  text-decoration: none;
+  letter-spacing: 3px;
+  color: #b7b7b7;
 }
 
 .homeComponent {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.4em;
-  background-color: black;
+  font-size: 1.3em;
   line-height: 1.5;
-  position: relative;
-  height: 101vh;
-  margin: -10px;
-  a {
-    text-decoration: none;
-    color: #b7b7b7;
-    letter-spacing: 3px;
+  height: 100vh;
+  .logo {
+    margin-top: 10px;
+    margin-left: 10px;
+    animation: rotate 2s linear infinite;
+    @keyframes rotate {
+      100% {
+        transform: rotatey(360deg);
+      }
+    }
   }
   .about {
-    text-align: center;
     position: absolute;
     top: 30px;
     left: calc(50% - 60px);
@@ -26,16 +40,56 @@ body {
     transform: rotate(90deg);
     position: absolute;
     right: 30px;
-    top: calc(50% - (1vh + 60px));
+    top: calc(50% - 60px);
   }
   .strength {
     position: absolute;
-    bottom: calc(1vh + 30px);
+    bottom: 30px;
     left: calc(50% - 60px);
   }
   .portfolio {
     transform: rotate(90deg);
     position: absolute;
-    top: calc(50% - (1vh + 60px));
+    left: 0;
+    top: calc(50% - 60px);
+  }
+  .profile {
+    margin-left: 60px;
+    margin-top: 60px;
+    width: 20%;
+  }
+  .wrapper {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    align-items: center;
+    h1::after {
+      content: "Hi I'm Deepak";
+      animation: textanim 10s linear infinite;
+      @keyframes textanim {
+        25% {
+          content: "I'm a Developer";
+        }
+        50% {
+          content: "I'm a Engineer";
+        }
+        75% {
+          content: "I'm a Blogger";
+        }
+      }
+    }
+    .resumeBtn {
+      display: flex;
+      margin-left: 15px;
+      justify-content: center;
+      padding: 10px;
+      margin-top: 100px;
+      background: #cc374c;
+      width: 100px;
+      font-size: 1rem;
+      border-radius: 5px;
+      font-weight: 500;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    }
   }
 }
