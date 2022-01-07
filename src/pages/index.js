@@ -1,7 +1,7 @@
-import React from 'react';
-import * as s from './index.module.scss';
 import { StaticImage } from 'gatsby-plugin-image';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import React from 'react';
+import * as s from './index.module.scss';
 
 export default function Home() {
   return (

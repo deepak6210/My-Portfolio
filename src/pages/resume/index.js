@@ -1,5 +1,5 @@
-import React from 'react';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import React from 'react';
 
 const Resume = () => {
   return (

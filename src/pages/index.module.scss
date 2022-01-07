@@ -1,19 +1,17 @@
-// @import 'src/styles/colors.module';
-
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: hidden; /* Hide horizontal scrollbar */
-  background-color: black;
-  color: #b7b7b7;
+  background-color: var(--primary-bgColor);
+  color: var(--primary-color);
 }
 
 a {
   text-decoration: none;
   letter-spacing: 3px;
-  color: #b7b7b7;
+  color: var(--primary-color);
 }
 
 .homeComponent {
@@ -84,12 +82,11 @@ a {
       justify-content: center;
       padding: 10px;
       margin-top: 100px;
-      background: #cc374c;
+      background: var(--secondary-color);
       width: 100px;
       font-size: 1rem;
       border-radius: 5px;
       font-weight: 500;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
     }
   }
 }
